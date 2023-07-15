@@ -1,6 +1,5 @@
 import PageContent from "./PageContent";
 import landingImage from "../components/auth/images/landing1.gif";
-import classes from "./Home.module.css";
 
 function HomePage() {
   return (
@@ -10,7 +9,7 @@ function HomePage() {
     >
       <p className="lead fs-5">Register and Enjoi !!!</p>
       <div className="mt-2">
-        <img src={landingImage} alt="Responsive image" className="img-fluid"/>
+        <img src={landingImage} alt="Responsive img" className="img-fluid"/>
       </div>
     </PageContent>
   );

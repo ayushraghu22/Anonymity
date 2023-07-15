@@ -1,6 +1,6 @@
 import { NavLink, Form, useRouteLoaderData } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
-import logoImage from "./auth/images/logo.png";
+// import logoImage from "./auth/images/logo.png";
 
 function MainNavigation() {
   const token = useRouteLoaderData("root");
