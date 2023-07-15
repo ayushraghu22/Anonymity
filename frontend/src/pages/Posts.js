@@ -19,7 +19,7 @@ function PostsPage() {
 export default PostsPage;
 
 async function loadEvents() {
-  const response = await fetch("http://localhost:5000/posts", {
+  const response = await fetch("https://anonymity-backend.onrender.com/posts", {
     method: "get",
     credentials: "include",
   });

@@ -4,7 +4,7 @@ import { redirect } from "react-router-dom";
 export async function action() {
   console.log("inside logOut")
   try {
-    fetch("http://localhost:5000/logout");
+    fetch("https://anonymity-backend.onrender.com/logout");
     Cookies.remove("connect.sid");
   } catch (e) {
     console.log(e);

@@ -21,7 +21,7 @@ export default PostDetailPage;
 async function loadEvents(params) {
   const postId = params.postId;
 
-  const response = await fetch("http://localhost:5000/posts/" + postId, {
+  const response = await fetch("https://anonymity-backend.onrender.com/posts/" + postId, {
     method: "get",
     credentials: "include",
   });
@@ -47,7 +47,7 @@ export function loader({ params }) {
 export async function action({ params, request }) {
   const postId = params.postId;
 
-  const url = "http://localhost:5000/posts/" + postId;
+  const url = "https://anonymity-backend.onrender.com/posts/" + postId;
   const response = await fetch(url, {
     method: request.method,
     credentials: "include",

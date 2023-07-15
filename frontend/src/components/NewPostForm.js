@@ -116,11 +116,11 @@ export async function action({ request, params }) {
   };
   console.log(postData);
 
-  let url = "http://localhost:5000/posts";
+  let url = "https://anonymity-backend.onrender.com/posts";
   if (method === "PATCH") {
     const postId = params.postId;
     console.log(postId);
-    url = "http://localhost:5000/posts/" + postId;
+    url = "https://anonymity-backend.onrender.com/posts/" + postId;
   }
 
   const response = await fetch(url, {

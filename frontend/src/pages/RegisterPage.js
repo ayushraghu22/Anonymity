@@ -18,7 +18,7 @@ export async function action({ request }) {
     otp: data.get("otp")
   };
 
-  const response = await fetch("http://localhost:5000/register", {
+  const response = await fetch("https://anonymity-backend.onrender.com/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
