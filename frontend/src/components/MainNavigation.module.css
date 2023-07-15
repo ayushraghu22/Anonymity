@@ -1,0 +1,69 @@
+.header {
+  padding: 2rem 1rem;
+  /* background: #E8ECEF; */
+  /* background-color: #00DD00; */
+
+  background-color: #6E6E6E;
+
+  background-color: #96C2DB;     /*blue jo pasand aaya
+  /* background-color: #e1b382; */ 
+
+  /* background-color: #FFCE32;     */
+  /* background-color: #FDF8F0;   */
+   background-color: #F0F0F0;    ;    
+  /* background-color: #6ACFC7;       */
+
+  /* background-color:  #51e2f5; */
+  /* background-color:  #DDD0C8; */
+
+  color: black;
+}
+
+/* .brand{
+  display: flex;
+  align-items: center;
+} */
+
+.brand a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navItemContainer {
+  display: flex;
+  justify-content: right;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0px;
+}
+
+.list li a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--color-primary-400);
+  font-weight: 600;
+}
+
+.list a:hover,
+.list a.active {
+  color: var(--color-primary-800);
+  text-decoration: underline;
+  list-style: none;
+}
+
+.containerFluid{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 990px) {
+  .navItemContainer {
+    justify-content: center;
+  }
+}

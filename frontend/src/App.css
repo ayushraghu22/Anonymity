@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  /* background-color: #F8F8FF; */
+  /* background-color: #E8ECEF; */
+
+  /* background-color: #6E6E6E; */
+
+  background-color: #96c2db;
+
+  background-color: #f0f0f0;
+
+  /* background-color: #51e2f5;   */
+  /* background-color: #DDD0C8;   */
+
+  color: black;
+  /* font-family: 'Bitter', serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Montserrat', sans-serif; */
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.outer-container {
+  width: 88%;
+  margin: 0 auto;
+  height: 100vh;
+}

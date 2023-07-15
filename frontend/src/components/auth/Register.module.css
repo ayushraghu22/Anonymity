@@ -1,0 +1,39 @@
+.loginIcons {
+  display: flex;
+  margin-top: 0;
+  align-items: center;
+}
+
+.formGroup {
+  margin-bottom: 0.6rem;
+  font-weight: 400;
+}
+
+.formGroup input{
+  padding: 0.6rem;
+  border-radius: 0;
+}
+
+.formGroup input::placeholder{
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.sideButtons {
+  float: right;
+  margin-top: -10px;
+  /* display: flex;
+  justify-content: right; */
+}
+
+.sideButtons button {
+  border: none;
+  background-color: inherit;
+  font-size: 0.9rem;
+  color: blue;
+}
+
+.sideButtons:hover {
+  text-decoration: underline;
+  color: blue;
+}

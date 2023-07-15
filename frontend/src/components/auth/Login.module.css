@@ -1,0 +1,18 @@
+.login-image {
+  margin-left: 35px;
+}
+
+.formGroup {
+  margin-bottom: 0.6rem;
+  font-weight: 400;
+}
+
+.formGroup input {
+  padding: 0.6rem;
+  border-radius: 0;
+}
+
+.formGroup input::placeholder {
+  font-size: 0.9rem;
+  opacity: 0.6;
+}

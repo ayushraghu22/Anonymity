@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 0;
+}
+
+.list a {
+  /* background-color: var(--color-gray-500); */
+  color: var(--color-gray-900);
+  /* padding: 0.5rem 1.5rem; */
+  /* border-radius: 4px; */
+  text-decoration: none;  
+  font-size: 1.05rem;
+}
+
+.list a:hover,
+.list a:active,
+.list a.active {
+  color: var(--color-primary-600);
+  text-decoration: underline;
+}

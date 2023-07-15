@@ -1,0 +1,10 @@
+.header{
+    background-color: #F0F0F0;
+    color: black;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+}   
