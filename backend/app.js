@@ -18,7 +18,7 @@ const PORT = process.env.PORT;
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://anonymity1.netlify.app/",
     methods: "GET, POST, PATCH, DELETE",
     credentials: true,
     cookie: {
