@@ -18,7 +18,7 @@ const PORT = process.env.PORT;
 
 app.use(
   cors({
-    origin: "https://anonymity-backend.onrender.com",
+    origin: "http://anonymity1.netlify.app",
     methods: "GET, POST, PATCH, DELETE",
     credentials: true,
     cookie: {
