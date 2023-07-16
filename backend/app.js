@@ -33,16 +33,16 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static("public"));
-app.set("trust proxy", 1);
 
+app.enable('trust proxy')
 app.use(
   session({
     secret: process.env.SECRET,
     resave: false,
-    saveUninitialized: true,
+    saveUninitialized: false,
     proxy: true,
     cookie: {
-      secure: false,
+      secure: true,
       httpOnly: false,
       maxAge: 24 * 60 * 60 * 1000, // 1 day;
       sameSite: "none",
@@ -52,6 +52,7 @@ app.use(
 
 app.use(passport.initialize());
 app.use(passport.session());
+
 
 ///////////////////////////////////////// imports done//////////////////////////
 
