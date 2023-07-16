@@ -39,6 +39,8 @@ app.use(
     secret: process.env.SECRET,
     resave: false,
     saveUninitialized: false,
+    proxy: true,
+    name: "MyCoolWebAppCookie",
     cookie: {
       secure: false,
       httpOnly: false,
