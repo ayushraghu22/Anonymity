@@ -39,7 +39,7 @@ app.use(
   session({
     secret: process.env.SECRET,
     resave: false,
-    saveUninitialized: false,
+    saveUninitialized: true,
     proxy: true,
     cookie: {
       secure: false,
