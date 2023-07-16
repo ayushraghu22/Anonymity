@@ -33,6 +33,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static("public"));
+app.set("trust proxy", 1);
 
 app.use(
   session({
@@ -40,11 +41,11 @@ app.use(
     resave: false,
     saveUninitialized: false,
     proxy: true,
-    name: "MyCoolWebAppCookie",
     cookie: {
       secure: false,
       httpOnly: false,
       maxAge: 24 * 60 * 60 * 1000, // 1 day;
+      sameSite: "none",
     },
   })
 );
