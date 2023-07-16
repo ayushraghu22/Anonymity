@@ -70,6 +70,8 @@ router.post(
 function inputValidation(req, res, next) {
   const data = req.body;
   let errors = {};
+  console.log(data.email);
+  console.log(data.password);
 
   if (!isValidEmail(data.email) || !isValidPassword(data.password, 6))
     errors.email = "Invalid Email or password.";
