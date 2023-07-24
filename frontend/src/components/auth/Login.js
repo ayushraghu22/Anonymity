@@ -24,10 +24,13 @@ function Login() {
 
   const onSubmitHandler = (event) => {
     // console.log(username, " ", password);
-    ctx.setEmailHandler(email);
     // console.log(email);
     submit({ email, password }, { method: "POST" });
     setIsSubmit(true);
+    if (isSubmit && data && data.errors) {
+    } else {
+      ctx.setEmailHandler(email);
+    }
   };
 
   return (
@@ -54,7 +57,7 @@ function Login() {
                       <h3>
                         Log in <strong></strong>
                       </h3>
-                      <p className="mb-4" style={{fontWeight:"400"}}>
+                      <p className="mb-4" style={{ fontWeight: "400" }}>
                         Please Login to see all the <strong>posts.</strong>
                       </p>
                     </div>
