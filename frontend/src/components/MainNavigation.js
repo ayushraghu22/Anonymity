@@ -1,14 +1,9 @@
 import { NavLink, Form, useRouteLoaderData } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 // import logoImage from "./auth/images/logo.png";
-import AuthContext from "../context-api/auth-context";
-import { useContext, useState } from "react";
-
 
 function MainNavigation() {
-  // const token = useRouteLoaderData("root");
-  const ctx = useContext(AuthContext);
-  const [token, setToken] = useState(ctx.email);
+  const token = useRouteLoaderData("root");
 
   return (
     <nav className={`navbar navbar-expand-lg ${classes.header}`}>
@@ -51,7 +46,7 @@ function MainNavigation() {
                 Home
               </NavLink>
             </li>
-            {token === "" && (
+            {!token && (
               <li>
                 <NavLink
                   to="/register"
@@ -63,7 +58,7 @@ function MainNavigation() {
                 </NavLink>
               </li>
             )}
-            {token === "" && (
+            {!token && (
               <li>
                 <NavLink
                   to="/login"
@@ -88,7 +83,7 @@ function MainNavigation() {
             </li>
           )} */}
 
-            {token !== "" && (
+            {token && (
               <li>
                 <NavLink
                   to="/posts"
@@ -101,7 +96,7 @@ function MainNavigation() {
               </li>
             )}
 
-            {token !== "" && (
+            {token && (
               <li>
                 <Form action="/logout" method="post">
                   <button
